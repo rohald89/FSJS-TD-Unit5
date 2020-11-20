@@ -118,7 +118,8 @@ document.querySelector('.search-container').innerHTML = `
 
 // check the searchterm and see if this term is present in one of the names
 // depending on the result either display or hide the card
-document.querySelector('#search-submit').addEventListener('click', () => {
+document.querySelector('#search-submit').addEventListener('click', e => {
+    e.preventDefault();
     const searchTerm = document.querySelector('.search-input').value.toLowerCase();
     const employeeCards = document.querySelectorAll('.card-name');
     employeeCards.forEach(card => {
