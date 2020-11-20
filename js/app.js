@@ -1,5 +1,5 @@
 let employees = [];
-const url = `https://randomuser.me/api/?results=12&inc=name, picture,
+const url = `https://randomuser.me/api/?lego&results=12&ginc=name, picture,
 email, location, phone, dob &noinfo &nat=NL`;
 let gallery = document.querySelector("#gallery");
 
